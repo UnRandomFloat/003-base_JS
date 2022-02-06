@@ -10,7 +10,7 @@ function mathOperation(arg1, arg2, operation){
         return subNums(arg1, arg2);
     case "произведение":
         return mulNums(arg1, arg2);
-    case "произведение":
+    case "деление":
         return divNums(arg1, arg2);
     }
 } 
