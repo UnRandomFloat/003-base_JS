@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получение элемента по id</title>
+</head>
+
+<body>
+    <a href="#">link1</a>
+    <a href="#">link2</a>1
+    <a href="#">link3</a>
+    <a href="#" id="four">link4</a>
+
+    <!-- Задание. Используя поиск по id, получите ссылку с текстом link4
+    и выведите ее в консоль. -->
+
+
+    <script>
+        "use strict";
+        function findElemById(elemId) {
+            let needLink = document.getElementById(elemId);
+            if (needLink === null) {
+                console.log("Искомый элемент не найден!");
+            }
+            else {
+                console.log(needLink);
+                console.dir(needLink);
+            }
+        }
+        Window.onload = findElemById
+        findElemById("four");
+
+
+    </script>
+</body>
+
+</html>
