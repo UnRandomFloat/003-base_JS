@@ -1,4 +1,4 @@
-; "use strict";
+"use strict";
 
 function compararray(a, b){
 if(a.price<b.price){
